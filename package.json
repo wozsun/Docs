@@ -1,0 +1,20 @@
+{
+  "name": "docs",
+  "version": "2.0.0",
+  "description": "wozsun's docs",
+  "license": "MIT",
+  "author": "wozsun",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "docs:clean": "vuepress dev docs --clean-cache"
+  },
+  "devDependencies": {
+    "vue": "3.3.4",
+    "vuepress": "2.0.0-beta.63",
+    "vuepress-theme-hope": "2.0.0-beta.226",
+    "@vuepress/utils": "2.0.0-beta.63",
+    "@vuepress/client": "2.0.0-beta.63"
+  }
+}
