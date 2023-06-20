@@ -33,7 +33,7 @@ export default defineUserConfig({
         },
         hotReload: true,
         pageInfo: ["Date", "Word", "ReadingTime", "Category", "Tag"],
-        darkmode: "toggle",
+        darkmode: "switch",
         contributors: false,
         docsBranch: "main",
         docsDir: "docs",
