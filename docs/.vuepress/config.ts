@@ -6,7 +6,10 @@ export default defineUserConfig({
     lang: "zh-CN",
     title: "Docs",
     description: "知识星球",
-    head: [["link", { rel: "icon", href: "https://asset.wozsun.com/wozsun.svg" }],],
+    head: [
+        ["link", { rel: "icon", href: "https://asset.wozsun.com/wozsun.svg" }],
+        ["meta", { name: "theme-color", content: "#1874ca" }],
+    ],
     shouldPrefetch: false,
     dest: "public",
     theme: hopeTheme({
