@@ -1,11 +1,9 @@
 # VuePress files
 docs/.vuepress/.temp/
 docs/.vuepress/.cache/
-docs/.vuepress/dist/
 
 # Node modules
 node_modules/
-yarn.lock
 
 # MacOS Desktop Services Store
 .DS_Store
