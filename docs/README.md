@@ -1,7 +1,7 @@
 ---
 home: true
-icon: home
-title: 主页
+icon: home-3-line
+title: 首页
 heroText: Recording Study
 tagline: Life, half is memory, half is to continue.
 # features:
@@ -13,4 +13,4 @@ tagline: Life, half is memory, half is to continue.
 #     icon: database-2-fill
 #     details: 数据库知识、MySQL、Redis
 #     link: /database/
----
+---  
