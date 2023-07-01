@@ -54,7 +54,7 @@ export default defineUserConfig({
         docsDir: "docs",
         displayFooter: true,
         copyright: false,
-        footer: "Copyright © 2022-2023 wozsun",
+        footer: "<a href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh' target='_blank'>CC BY-NC-SA 4.0</a><br><b>Copyright © 2022-2023 wozsun</b>",
         rtl: false,
         toc: true,
         iconAssets: [ // 图标浏览https://remixicon.com/
