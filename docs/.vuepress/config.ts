@@ -1,6 +1,17 @@
 import { defineUserConfig } from "vuepress";
-import { hopeTheme } from "vuepress-theme-hope";
-import { Navbar, Sidebar } from "./bar";
+import { hopeTheme, navbar, sidebar } from "vuepress-theme-hope";
+
+// 图标浏览https://remixicon.com/
+
+export const Navbar = navbar([
+    { text: "首页", icon: "home-3-line", link: "/" },
+    { text: "杂项", icon: "file-copy-2-line", link: "/misc/" },
+    { text: "博客", icon: "gps-line", link: "https://www.wozsun.com" },
+]);
+
+export const Sidebar = sidebar({
+    "/misc/": "structure",
+});
 
 export default defineUserConfig({
     lang: "zh-CN",
@@ -57,7 +68,7 @@ export default defineUserConfig({
         footer: "<a href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh' target='_blank'>CC BY-NC-SA 4.0</a><br><b>Copyright © 2022-2023 wozsun</b>",
         rtl: false,
         toc: true,
-        iconAssets: [ // 图标浏览https://remixicon.com/
+        iconAssets: [
             "https://at.alicdn.com/t/c/font_4128793_d0rhm36922l.css",
             "https://asset.wozsun.com/remixicon/remixicon.css",
         ],
@@ -70,6 +81,19 @@ export default defineUserConfig({
         plugins: {
             blog: true,
             git: true,
+            nprogress: true,
+            prismjs: true,
+            photoSwipe: true,
+            readingTime: true,
+            seo: true,
+            sitemap: true,
+            copyCode: {
+                selector: '.theme-default-content div[class*="language-"] pre',
+                showInMobile: true,
+                duration: 1500,
+                // pure: false,
+                delay: 800,
+            },
             components: {
                 components: [
                     "Badge",
@@ -93,6 +117,7 @@ export default defineUserConfig({
                 sup: true,
                 sub: true,
                 tasklist: true,
+                demo: false,
                 card: true,
                 imgLazyload: true,
                 imgMark: false,
@@ -102,6 +127,8 @@ export default defineUserConfig({
                 mark: true,
                 footnote: true,
                 align: true,
+                vuePlayground: false,
+                playground: { presets: [], config: {} },
                 stylize: [
                     {
                         matcher: "Recommanded",
@@ -117,7 +144,6 @@ export default defineUserConfig({
                 ],
             },
             pwa: {
-                // showInstall: true,
                 manifest: {
                     theme_color: "#1874ca",
                 },
