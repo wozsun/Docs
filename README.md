@@ -2,8 +2,8 @@
 
 欢迎来到我的知识星球！
 
-仓库地址 -> [主仓库](https://code.wozsun.com/docs/docs.wozsun.com) | [GitHub](https://github.com/wozsun/Docs)
-文章地址 -> [Docs](https://docs.wozsun.com)
+- 仓库地址 -> [主仓库](https://code.wozsun.com/docs/docs.wozsun.com) | [GitHub](https://github.com/wozsun/Docs)
+- 文章地址 -> [Docs](https://docs.wozsun.com)
 
 ## Thanks
 
