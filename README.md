@@ -2,8 +2,8 @@
 
 欢迎来到我的知识星球！
 
-仓库地址 -> [GitLab](https://code.wozsun.com/docs/docs.wozsun.com) | [GitHub](https://github.com/wozsun/Docs)
-文章地址 -> My [Docs](https://docs.wozsun.com)
+- 仓库地址 -> <a href="https://code.wozsun.com/docs/docs.wozsun.com" target="_blank">主仓库</a> | <a href="https://github.com/wozsun/Docs" target="_blank">GitHub</a>
+- 文章地址 -> <a href="https://docs.wozsun.com" target="_blank">Docs</a>
 
 ## Thanks
 
