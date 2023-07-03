@@ -13,4 +13,4 @@
 
 ## Status
 
-[![Pipeline Status](https://code.wozsun.com/docs/docs.wozsun.com/badges/main/pipeline.svg)](https://code.wozsun.com/docs/docs.wozsun.com/-/commits/main) [![Vercel Status](https://vercelbadge.vercel.app/api/wozsun/Docs)](https://vercel.com/wozsun/Docs) [![Netlify Status](https://api.netlify.com/api/v1/badges/603e9a4a-76fb-44ef-98c0-741dd6597a64/deploy-status)](https://app.netlify.com/sites/wozsun-docs/deploys)
+[![Pipeline Status](https://code.wozsun.com/docs/docs.wozsun.com/badges/main/pipeline.svg?key_text=Pages&key_width=45)](https://code.wozsun.com/docs/docs.wozsun.com/-/commits/main) [![Vercel Status](https://vercelbadge.vercel.app/api/wozsun/Docs)](https://vercel.com/wozsun/Docs) [![Netlify Status](https://api.netlify.com/api/v1/badges/603e9a4a-76fb-44ef-98c0-741dd6597a64/deploy-status)](https://app.netlify.com/sites/wozsun-docs/deploys)
