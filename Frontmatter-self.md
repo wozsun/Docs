@@ -1,13 +1,11 @@
 ---
 shortTitle:
 description:
-icon:
+icon: article-line
 isOriginal: 
-date:
 category:
     -
 tag:
     -
-headerDepth: 2
 order: 
 ---
