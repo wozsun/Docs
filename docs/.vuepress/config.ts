@@ -89,7 +89,7 @@ export default defineUserConfig({
             blog: {
                 excerpt: true,
                 excerptSeparator: "<!-- absrtact -->",
-                excerptLength: 300,
+                excerptLength: 0,
                 type: [],
                 article: "/article/",
                 category: "/category/",
