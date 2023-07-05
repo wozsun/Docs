@@ -189,6 +189,7 @@ export default defineUserConfig({
         blog: {
             sidebarDisplay: "none",
             avatar: "https://asset.wozsun.com/avatar.webp",
+            roundAvatar: true,
             name: "wozsun",
             description: "欲买桂花同载酒，终不似，少年游",
             medias: {
