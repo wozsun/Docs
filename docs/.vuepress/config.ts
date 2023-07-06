@@ -1,5 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import { hopeTheme, navbar, sidebar } from "vuepress-theme-hope";
+import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 
 // 图标浏览https://remixicon.com/
 
@@ -42,7 +43,7 @@ export default defineUserConfig({
         navbarLayout: {
             start: ["Brand"],
             center: ["Links"],
-            end: ["Repo", "Outlook"],
+            end: ["Repo", "Outlook", "Search"],
         },
         navTitle: "Docs",
         navbarAutoHide: "mobile",
@@ -199,4 +200,56 @@ export default defineUserConfig({
             },
         },
     }),
+    plugins: [
+        docsearchPlugin({
+            appId: "F1UGFIIFKP",
+            apiKey: "cd0f6b45036ffeec7c021f9f69790cfb",
+            indexName: "wozsun",
+            placeholder: "搜索文档",
+            disableUserPersonalization: false,
+            injectStyles: true,
+            translations: {
+                button: {
+                    buttonText: "搜索文档",
+                    buttonAriaLabel: "搜索文档",
+                },
+                modal: {
+                    searchBox: {
+                        resetButtonTitle: "清除查询条件",
+                        resetButtonAriaLabel: "清除查询条件",
+                        cancelButtonText: "取消",
+                        cancelButtonAriaLabel: "取消",
+                    },
+                    startScreen: {
+                        recentSearchesTitle: "搜索历史",
+                        noRecentSearchesText: "没有搜索历史",
+                        saveRecentSearchButtonTitle: "保存至搜索历史",
+                        removeRecentSearchButtonTitle: "从搜索历史中移除",
+                        favoriteSearchesTitle: "收藏",
+                        removeFavoriteSearchButtonTitle: "从收藏中移除",
+                    },
+                    errorScreen: {
+                        titleText: "无法获取结果",
+                        helpText: "你可能需要检查你的网络连接",
+                    },
+                    footer: {
+                        selectText: "选择",
+                        selectKeyAriaLabel: "回车键",
+                        navigateText: "切换",
+                        navigateUpKeyAriaLabel: "向上箭头",
+                        navigateDownKeyAriaLabel: "向下箭头",
+                        closeText: "关闭",
+                        closeKeyAriaLabel: "Esc键",
+                        searchByText: "搜索提供者",
+                    },
+                    noResultsScreen: {
+                        noResultsText: "无法找到相关结果",
+                        suggestedQueryText: "你可以尝试查询",
+                        reportMissingResultsText: "你认为该查询应该有结果？",
+                        reportMissingResultsLinkText: "点击反馈",
+                    },
+                },
+            },
+        }),
+    ],
 });
