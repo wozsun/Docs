@@ -11,7 +11,7 @@ pages:
     - export NODE_OPTIONS=--openssl-legacy-provider
     - yarn install
   script:
-    - yarn docs:build
+    - yarn build
   artifacts:
     paths:
       - public
