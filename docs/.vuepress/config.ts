@@ -104,6 +104,7 @@ export default defineUserConfig({
             copyCode: {
                 showInMobile: true,
                 duration: 2000,
+                fancy: false,
                 delay: 800,
             },
             components: {
