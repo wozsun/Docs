@@ -7,7 +7,6 @@ import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 export const Navbar = navbar([
     { text: "首页", icon: "home-3-line", link: "/" },
     { text: "杂项", icon: "file-copy-2-line", link: "/misc/" },
-    { text: "博客", icon: "gps-line", link: "https://www.wozsun.com" },
 ]);
 
 export const Sidebar = sidebar({
@@ -65,8 +64,7 @@ export default defineUserConfig({
         docsBranch: "main",
         docsDir: "docs",
         displayFooter: true,
-        copyright: false,
-        footer: "<a href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh' target='_blank'>CC BY-NC-SA 4.0</a><br><a href='https://beian.miit.gov.cn/' target='_blank'>鄂ICP备2022020520号-1</a><br><b>Copyright © 2022-2023 wozsun</b>",
+        copyright: "<b>CC BY-NC-SA 4.0 | Copyright © 2022-2023 wozsun</b>",
         rtl: false,
         toc: true,
         iconAssets: [
@@ -83,10 +81,23 @@ export default defineUserConfig({
             git: true,
             nprogress: true,
             prismjs: true,
-            photoSwipe: true,
-            readingTime: true,
+            photoSwipe: {
+                scrollToClose: true,
+                delay: 800,
+            },
+            readingTime: {
+                wordPerMinute: 300,
+            },
             seo: true,
             sitemap: true,
+            copyright: {
+                global: false,
+                author: "wozsun",
+                license: "CC BY-NC-SA 4.0",
+                triggerWords: 300,
+                disableCopy: false,
+                disableSelection: false,
+            },
             blog: {
                 excerpt: true,
                 excerptSeparator: "<!-- absrtact -->",
@@ -117,8 +128,8 @@ export default defineUserConfig({
                 comment: true,
                 repo: "wozsun/Docs",
                 repoId: "R_kgDOJ2pUrA",
-                category: "Announcements",
-                categoryId: "DIC_kwDOJ2pUrM4CXqup",
+                category: "General",
+                categoryId: "DIC_kwDOJ2pUrM4CXquq",
                 mapping: "pathname",
                 strict: true,
                 lazyLoading: true,
