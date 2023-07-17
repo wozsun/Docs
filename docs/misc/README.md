@@ -6,4 +6,3 @@ pageInfo: []
 article: false
 timeline: false
 ---
-[那些句子](那些句子)——文章本天成，妙手偶得之。
