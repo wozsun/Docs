@@ -12,5 +12,5 @@
 ## Thanks
 
 - Powered By [VuePress](https://v2.vuepress.vuejs.org)
-- Theme By [VuePress-Hope-Theme](https://theme-hope.vuejs.press)
+- Theme By [VuePress Theme Hope](https://theme-hope.vuejs.press)
 - Deployed By [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/) | [Vercel](https://vercel.com) | [Netlify](https://www.netlify.com)
