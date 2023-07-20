@@ -201,6 +201,11 @@ export default defineUserConfig({
                     maskIcon: "https://asset.wozsun.com/wozsun.svg",
                 }
             },
+            autoCatalog: {
+                level: 3,
+                index: false,
+                exclude: [],
+            },
         },
         blog: {
             sidebarDisplay: "none",
