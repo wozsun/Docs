@@ -72,7 +72,7 @@ export default defineUserConfig({
         toc: true,
         iconAssets: [
             "https://at.alicdn.com/t/c/font_4128793_d0rhm36922l.css",
-            "https://asset.wozsun.com/remixicon/remixicon.css",
+            "https://asset.wozsun.com/remixicon/remixicon.css"
         ],
         iconPrefix: "ri-",
         darkmode: "switch",
@@ -122,9 +122,7 @@ export default defineUserConfig({
                 delay: 800,
             },
             components: {
-                components: [
-                    "Badge",
-                ],
+                components: ["Badge", "SiteInfo"],
             },
             comment: {
                 provider: "Giscus",
