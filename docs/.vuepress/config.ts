@@ -80,6 +80,11 @@ export default defineUserConfig({
         backToTop: true,
         pure: false,
         print: true,
+        encrypt: {
+            global: false,
+            admin: [],
+            config: {},
+        },
         plugins: {
             git: true,
             nprogress: true,
