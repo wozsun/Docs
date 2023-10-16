@@ -20,29 +20,32 @@ async function handleRequest(request) {
 
     const hostname = new URL(request.url).hostname;
     let response = new Response('Not Found', { status: 404 });
-    if (hostname == 'api.example.com') {response = await handleAPI(request); }
 
+    //预留拓展
+    if (hostname == 'api.example.com') {response = await handleAPI(request); }
     //其他处理函数
 
     return response;
 }
 
+//API域名处理
 async function handleAPI(request) {
 
     let url = new URL(request.url);
     let response = new Response('Not Found', { status: 404 });
 
+    //根据路径执行不同操作
     if (url.pathname === '/random-img') {
         response = await handleRandomImg(request);
     }
 
-    //CORS配置，允许所有域名访问
+    //CORS配置，允许所有跨域请求
     response.headers.set('Access-Control-Allow-Origin', '*');
     response.headers.set('Access-Control-Allow-Methods', '*');
     response.headers.set('Access-Control-Max-Age', '7200');
 
     /*
-    //根据Origin和Referer设置CORS
+    //根据Origin和Referer设置跨域请求
     const origin = request.headers.get('Origin');
     const referer = request.headers.get('Referer');
     if (origin && origin.endsWith('example.com')) {
@@ -63,7 +66,6 @@ async function handleAPI(request) {
 async function handleRandomImg(request) {
 
     let url = new URL(request.url);
-    function getMaxImageNumber(folder) { return folderMap[folder].max; }
 
     const folderMap = {
         'pc-dark': { type: 'pc', theme: 'dark', max: 10 },
@@ -116,7 +118,7 @@ async function handleRandomImg(request) {
     //如果参数没有对应的文件夹，则返回400
     if (!folder) {return new Response('Bad Request', { status: 400 });}
 
-    let maxImageNumber = getMaxImageNumber(folder);
+    let maxImageNumber = folderMap[folder].max;
     let imageNumber = Math.floor(Math.random() * maxImageNumber) + 1;
     let imageUrl = `https://example.com/random-img/${folder}/${imageNumber}.webp`;
 
