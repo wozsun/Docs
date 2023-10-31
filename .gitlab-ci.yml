@@ -6,12 +6,14 @@ pages:
       - node_modules/
     key:
       files:
-        - yarn.lock
+        - pnpm-lock.yaml
   before_script:
     - export NODE_OPTIONS=--openssl-legacy-provider
-    - yarn install
+    - corepack enable
+    - corepack prepare pnpm@latest --activate
   script:
-    - yarn build
+    - pnpm install --frozen-lockfile
+    - pnpm build
   artifacts:
     paths:
       - public
