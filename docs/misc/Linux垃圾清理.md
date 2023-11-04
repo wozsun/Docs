@@ -7,14 +7,14 @@ tag:
 description: Linux服务器上部分垃圾文件清理
 ---
 
-软件清理
+## 软件清理
 
 ```sh
 apt autoclean              清理旧版本的软件缓存
 apt autoremove             清理不再需要的软件包
 ```
 
-内核清理
+## 内核清理
 
 ```sh
 # 首先要使用这个命令查看当前Ubuntu系统使用的内核
