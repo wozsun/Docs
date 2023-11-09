@@ -152,7 +152,7 @@ export default defineUserConfig({
                 codetabs: true,
                 attrs: false,
                 figure: false,
-                mermaid: true,
+                mermaid: false,
                 katex: false,
                 mathjax: false,
                 chart: false,
