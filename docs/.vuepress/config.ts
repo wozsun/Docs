@@ -127,7 +127,8 @@ export default defineUserConfig({
                 delay: 800,
             },
             components: {
-                components: ["Badge", "SiteInfo"],
+                components: ["Badge"],
+                componentOptions: {},
             },
             comment: {
                 provider: "Giscus",
@@ -146,7 +147,7 @@ export default defineUserConfig({
             },
             mdEnhance: {
                 gfm: true,
-                container: true,
+                hint: true,
                 checkLinks: { status: "dev" },
                 tabs: true,
                 codetabs: true,

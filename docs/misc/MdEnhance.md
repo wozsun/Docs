@@ -23,7 +23,7 @@ description: MdEnhance可以使用的所有语法
 警告
 :::
 
-:::danger 警告
+:::caution 警告
 危险
 :::
 
