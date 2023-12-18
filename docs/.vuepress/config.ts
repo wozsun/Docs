@@ -7,8 +7,7 @@ import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 export const Navbar = navbar([
     { text: "首页", icon: "home-3-line", link: "/" },
     { text: "杂项", icon: "file-copy-2-line", link: "/misc/" },
-    { text: "生活", icon: "camera-lens-line", link: "https://life.wozsun.com" },
-    { text: "主站", icon: "gps-line", link: "https://www.wozsun.com" },
+    { text: "个人主页", icon: "gps-line", link: "https://www.wozsun.com" },
 ]);
 
 export const Sidebar = sidebar({
