@@ -1,11 +1,11 @@
 import { defineUserConfig } from "vuepress";
 import { hopeTheme, navbar, sidebar } from "vuepress-theme-hope";
-import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 
 // 图标浏览https://remixicon.com/
 
 export const Navbar = navbar([
     { text: "首页", icon: "home-3-line", link: "/" },
+    { text: "服务器", icon: "server-line", link: "/server/" },
     { text: "杂项", icon: "file-copy-2-line", link: "/misc/" },
     { text: "个人主页", icon: "gps-line", link: "https://www.wozsun.com" },
 ]);
