@@ -66,7 +66,7 @@ export default defineUserConfig({
         docsBranch: "main",
         docsDir: "docs",
         displayFooter: true,
-        copyright: "<b>CC BY-NC-SA 4.0 | Copyright © 2022-2023 wozsun</b>",
+        copyright: "<b>CC BY-NC-SA 4.0 | Copyright © 2022-2024 wozsun</b>",
         rtl: false,
         toc: true,
         iconAssets: [
