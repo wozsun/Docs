@@ -76,7 +76,6 @@ export default defineUserConfig({
         iconPrefix: "ri-",
         darkmode: "switch",
         fullscreen: false,
-        backToTop: true,
         pure: false,
         print: true,
         encrypt: {
@@ -114,7 +113,6 @@ export default defineUserConfig({
             copyCode: {
                 showInMobile: true,
                 duration: 2000,
-                fancy: false,
                 delay: 800,
             },
             components: {
@@ -139,7 +137,6 @@ export default defineUserConfig({
             mdEnhance: {
                 gfm: true,
                 hint: true,
-                checkLinks: { status: "dev" },
                 tabs: true,
                 codetabs: true,
                 attrs: false,
@@ -178,11 +175,6 @@ export default defineUserConfig({
                         },
                     },
                 ],
-            },
-            autoCatalog: {
-                level: 3,
-                index: false,
-                exclude: [],
             },
             docsearch: {
                 appId: "F1UGFIIFKP",
