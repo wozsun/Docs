@@ -1,6 +1,6 @@
 # ZeSean's Docs
 
-[![Pipeline Status](https://code.wozsun.com/docs/docs.wozsun.com/badges/main/pipeline.svg?key_text=Pages&key_width=45)](https://code.wozsun.com/docs/docs.wozsun.com/-/commits/main) [![Vercel Status](https://vercelbadge.vercel.app/api/wozsun/Docs)](https://vercel.com/wozsun/Docs) [![Netlify Status](https://api.netlify.com/api/v1/badges/603e9a4a-76fb-44ef-98c0-741dd6597a64/deploy-status)](https://app.netlify.com/sites/docs-wozsun/deploys)
+[![Pipeline Status](https://code.wozsun.com/docs/docs.wozsun.com/badges/main/pipeline.svg?key_text=Pages&key_width=45)](https://code.wozsun.com/docs/docs.wozsun.com/-/commits/main) [![Vercel Status](https://vercelbadge.vercel.app/api/wozsun/Docs)](https://vercel.com/wozsun/Docs) [![Netlify Status](https://api.netlify.com/api/v1/badges/f2a6e845-0119-43c6-8f5e-7b9b90bf8163/deploy-status)](https://app.netlify.com/sites/docs-wozsun/deploys)
 
 ---
 
